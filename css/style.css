@@ -1,24 +1,52 @@
 body{
     font-family: sans-serif;
+    scroll-behavior: smooth;
+    zoom: unset;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    ul li{
+        font-size: 10px;
+    }
+
+    .hide-1{
+        display: none;
+    }
+
+    .d-flex{
+        display: block;
+    }
+
+    .di1 {
+        margin-left: 200px;
+    }
+    
+    .di2 {
+
+        margin-left: 200px;
+    }
+    
+}
+
 .di1 {
     background-color: #9e3922bb;
     border-radius: 2px 30px 2px 30px;
     color: white;
     font-weight: 200;
-    font-size: 5px;
-    width: 600px;
-    height: 70px;
+    font-size: 1px;
+    width: 450px;
+    height: 60px;
+    margin-left: -20px;
 }
 
 .di2 {
     background-color: #de9b37b6;
     border-radius: 30px 2px 30px 2px;
     color: white;
-    font-size: 5px;
-    width: 600px;
-    height: 70px;
-    margin-top: 3px;
+    font-size: 2px;
+    width: 450px;
+    height: 60px;
+    margin-left: -20px;
 }
 
 .di2 h1{
@@ -35,16 +63,16 @@ body{
 .head {
     position: absolute;
     top: 450px;
-    left: 750px;
+    left: 250px;
     display: block;
     z-index: 100; /* Increase the z-index value */
 }
 
 .carouselslide {
-    z-index: 1; /* Lower the z-index value */
+    z-index: 1; /* Lower the z-index value */  
 }
 .long-line{
-    height: 260px;
+    height: 240px;
     width: 6px;
     background-color: #de9b37;
     margin-left: 20px;
@@ -82,7 +110,7 @@ body{
 }
 nav{
     background-color: white;
-    width: 100%;
+    width: 1400px;
     height: 80px;
 }
 nav ul{
@@ -104,7 +132,7 @@ ul div li{
     text-transform: capitalize;
     font-weight: 300;
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 15px;
 }
 ul div li:hover{
     color: #DE9B37;
@@ -151,14 +179,14 @@ nav h1{
     height: 680px;
 }
 .card{
-    width: 220px;
-    height: 250px;
+    width: 180px;
+    height: 50px;
     border: 2px solid #fff;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .card img{
     margin-top: 50px;
-    width: 110px;
+    width: 80px;
     margin-left: 55px;
 }
 .des1{
@@ -176,48 +204,63 @@ nav h1{
     margin-top: 30px;
 }
 .fir{
-    width: 500px;
-    height: 400px;
+    width: 470px;
+    height: 370px;
    background-color: #DE9B37;
    box-sizing: border-box;
+   padding: 50px;
 }
 .te{
     color: white;
     font-family: sans-serif;
     font-weight: 100;
-    font-size: 22px;
-    margin-left: 70px;
-    margin-top: 70px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
 }
+
 .te1{
     color: white;
     font-family: sans-serif;
     font-weight: 100;
     font-size: 22px;
-    margin-left: 70px;
-    margin-top: 48px;
+    text-align: center;
+    margin-top: 68px;
+}
+
+.te2{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 28px;
+    position: absolute;
+    text-align: center;
+    margin-left: 65px;
 }
 
 pre{
     color: white;
     margin-top: -50px;
-    margin-left: 0px;
+    margin-left: -50px;
     font-family: sans-serif;
 }
 .btn-1{
     background-color: transparent;
     border: 1px solid white;
     color: white;
-    font-weight: 100;
-    font-size: 17px;
-    margin-left: 70px;
-    padding: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 15px;
+    width: 250px;
     border-radius: 4px;
     margin-top: 30px;
 }
 .sec{
-    width: 500px;
-    height: 400px;
+    width: 620px;
+    height: 370px;
    background-color: #de9b37d5;
    box-sizing: border-box;
 }
@@ -225,28 +268,27 @@ pre{
     background-color: transparent;
     border: 1px solid white;
     color: white;
-    font-weight: 100;
-    font-size: 17px;
+    font-weight: 400;
+    font-size: 15px;
     margin-left: 70px;
-    padding: 10px;
+    padding: 15px;
+    width: 250px;
     border-radius: 4px;
     margin-top: -9px;
 }
 .hr-3{
-    color: white;
-    width: 285px;
-    margin-left: 70px;
+    color: #ffffff;
+    width: 225px;
+    margin-left: 110px;
 }
 .thi{
-    width: 500px;
-    height: 400px;
+    width: 470px;
+    height: 370px;
     background-color: #de9b37b4;
     box-sizing: border-box;
 
 }
-.p{
-    margin-left: 30px;
-}
+
 .grid-container{
     display: flex;
     grid-template-columns: auto auto auto;
@@ -364,8 +406,8 @@ h4{
 }
 .hr{
     width: 170px;
-    margin-left: 70px;
-    height: 20px;
+    margin-left: 30px;
+    height: 10px;
     margin-top: 20px;
     color: white;
 }
